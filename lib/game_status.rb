@@ -42,7 +42,7 @@ WIN_COMBINATIONS = [
   end
 
 def winner(board)
-  if won?(board) != (false || nil)
+  if won?(board) != nil
     winning_positions = won?(board)
     variable_location = winning_positions[0]
     if board[variable_location] == "X"
