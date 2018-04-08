@@ -45,5 +45,5 @@ def winner(board)
   winning_positions = won?(board)
   variable_location = winning_positions[0]
   if board[variable_location] == "X"
-    board.detect
+    board.detect{|x|
 end
