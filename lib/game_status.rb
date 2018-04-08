@@ -42,7 +42,7 @@ WIN_COMBINATIONS = [
   end
 
 def winner(board)
-  [winning_positions] = won?(board)
+  winning_positions = won?(board)
   winning_positions.detect do |variable|
     variable == "X" || variable == "O"
   end
