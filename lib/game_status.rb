@@ -49,6 +49,6 @@ def winner(board)
     board.detect{|x| x == "X"}
     else board.detect{|o| o == "O"}
   end
-else return nil
+else puts "I can't figure this out"
   end
 end
