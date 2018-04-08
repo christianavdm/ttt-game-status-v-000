@@ -41,7 +41,7 @@ WIN_COMBINATIONS = [
     !!won?(board) || !!full?(board)
   end
 
-def winner?(board)
+def winner(board)
     if WIN_COMBINATIONS.detect do |win_combination|
      win_index_1 = win_combination[0]
      win_index_2 = win_combination[1]
