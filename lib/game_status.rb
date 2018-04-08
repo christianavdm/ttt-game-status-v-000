@@ -44,7 +44,9 @@ WIN_COMBINATIONS = [
 def winner(board)
   winning_positions = won?(board)
   variable_location = winning_positions[0]
-  if board[variable_location] == "X"
+  if winning_positions == "false"
+    
+    board[variable_location] == "X"
     board.detect{|x| x == "X"}
   elsif board[variable_location] == "O"
     board.detect{|o| o == "O"}
