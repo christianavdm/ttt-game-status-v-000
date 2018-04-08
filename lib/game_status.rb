@@ -32,3 +32,8 @@ WIN_COMBINATIONS = [
       position == "X" || position == "O"
     end
   end
+    
+  def draw?(board)
+    if won?(board) == false && if full?(board) == true 
+    end
+  end
