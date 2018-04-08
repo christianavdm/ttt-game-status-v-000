@@ -45,4 +45,7 @@ def winner(board)
   winning_positions = won?(board)
   variable_location = winning_positions[0]
   board[variable_location]
+  if board[variable_location] != "X" && board[variable_location] !="O" 
+    puts nil
+  end
 end
