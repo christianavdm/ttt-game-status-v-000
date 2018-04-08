@@ -43,7 +43,6 @@ WIN_COMBINATIONS = [
 
 def winner(board)
   winning_positions = won?(board)
-  winning_positions.detect do |variable|
-    variable == "X" || variable == "O"
-  end
+  variable_location = winning_positions[0]
+  board[variable_location]
 end
