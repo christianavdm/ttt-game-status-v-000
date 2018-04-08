@@ -53,5 +53,4 @@ def winner?(board)
     end
       returns "X"
     end
-    end
 end
