@@ -48,6 +48,6 @@ def winner(board)
     board.detect{|x| x == "X"}
   elsif board[variable_location] == "O"
     board.detect{|o| o == "O"}
-  else return nil 
+  else board.detect{|o| o == "O"}
   end
 end
